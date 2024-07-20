@@ -4,8 +4,6 @@ mode=$2
 utc=$3
 date=$4
 
-islog=$(ls | grep vviperlog.txt)
-
 if [  -e vviperlog.txt ]; then
 	echo "Log file detected"
 else
