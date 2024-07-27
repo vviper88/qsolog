@@ -1,0 +1,23 @@
+#!/bin/bash
+callsign=$1
+mode=$2
+utc=$3
+date=$4
+
+if [  -e ~/qsolog/qsolog.txt ]; then
+	echo "Log file detected"
+else
+	echo "Creating log file"
+	mkdir ~/qsolog
+	touch ~/qsolog/qsolog.txt
+	echo "What is your callsign?"
+	read ocs
+	echo "log from qsolog for $ocs" >> ke2qso.txt
+fi
+
+if [ $callsign == "help" ]; then
+	echo "format: qsolog (contacted callsign) (mode) (utc) (date)"
+else
+	echo "$callsign    $mode    $utc $date" >> ~/qsolog/qsolog.txt
+	echo "Contact logged :)"
+fi
