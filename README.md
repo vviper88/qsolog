@@ -1,4 +1,4 @@
-# ke2qso
+# qsolog
 <p>Minimal logger for ham radio contacts.</p>
 
-<p>Format: ke2qso callsign mode utc date</p>
+<p>Format: qsolog callsign mode utc date</p>
