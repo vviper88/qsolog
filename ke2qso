@@ -11,10 +11,10 @@ else
 	touch vviperlog.txt
 	echo "What is your callsign?"
 	read ocs
-	echo "log from vviperlog.sh for $ocs" >> vviperlog.txt
+	echo "log from ke2qso for $ocs" >> ke2qso.txt
 fi
 
 
-echo "$callsign    $mode    $utc $date" >> vviperlog.txt
+echo "$callsign    $mode    $utc $date" >> ke2qso.txt
 echo "Contact logged :)"
 
