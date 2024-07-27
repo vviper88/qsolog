@@ -17,6 +17,8 @@ fi
 
 if [ $callsign == "help" ]; then
 	echo "format: qsolog (contacted callsign) (mode) (utc) (date)"
+elif [ $callsign == "view" ]; then
+	cat ~/qsolog/qsolog.txt
 else
 	echo "$callsign    $mode    $utc $date" >> ~/qsolog/qsolog.txt
 	echo "Contact logged :)"
